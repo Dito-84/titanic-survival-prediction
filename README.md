@@ -41,10 +41,11 @@ The model leans toward predicting "died": it catches 88% of passengers who died 
 
 ```bash
 pip install -r requirements.txt
+pip install -r requirements-optional.txt   # optional: the data-quality check
 jupyter notebook RDR_Titanic.ipynb
 ```
 
-`dstoolkit` is only used for the data-quality check. If it can't be installed, that one cell is skipped and everything else runs the same.
+`dstoolkit` is only used for the data-quality check. Without it, that one cell is skipped and everything else runs the same.
 
 ## Data
 

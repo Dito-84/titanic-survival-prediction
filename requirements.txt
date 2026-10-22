@@ -5,5 +5,3 @@ seaborn
 scikit-learn
 tensorflow
 jupyter
-# Optional: data-quality check in section 1 (pinned to a tested version)
-dstoolkit @ git+https://github.com/Dito-84/Data_Science_Toolkit@44d8566f82e4f44e87368d278bdb88a9e4bec603
