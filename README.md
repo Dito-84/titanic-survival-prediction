@@ -50,3 +50,7 @@ jupyter notebook titanic_survival.ipynb
 ## Data
 
 `titanic3.csv` from the Vanderbilt Biostatistics Titanic dataset. Missing values are recorded as `?` and converted to `NaN` on load.
+
+## License
+
+The code and notebook are [MIT](LICENSE)-licensed. `titanic3.csv` isn't covered: it keeps the terms of its source, the Vanderbilt Biostatistics Titanic dataset.
