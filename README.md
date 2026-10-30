@@ -32,7 +32,7 @@ The model leans toward predicting "died": it catches 88% of passengers who died 
 
 ## What's in the notebook
 
-1. **Check and explore:** a data-quality profile with [dstoolkit](https://github.com/Dito-84/Data_Science_Toolkit), my data-cleaning package, then survival by age, family aboard, class and fare, split by sex (`Titanic Graphs.png`). The profile flags the 20% of missing ages and the mostly-empty columns. Ages are then filled inside each cross-validation fold rather than up front, so test data never leaks into training.
+1. **Check and explore:** a data-quality profile with [dstoolkit](https://github.com/Dito-84/dstoolkit), my data-cleaning package, then survival by age, family aboard, class and fare, split by sex (`Titanic Graphs.png`). The profile flags the 20% of missing ages and the mostly-empty columns. Ages are then filled inside each cross-validation fold rather than up front, so test data never leaks into training.
 2. **Prepare:** encode sex, add a `relatives` flag, extract title from the name, and fill missing ages with the median inside the model pipeline (about 20% of passengers have no recorded age; they're kept rather than dropped)
 3. **Compare:** score each model on the same five stratified folds so the comparison doesn't depend on one train/test split
 4. **Explain:** cross-validated confusion matrix, error rates by class and sex, and permutation feature importance

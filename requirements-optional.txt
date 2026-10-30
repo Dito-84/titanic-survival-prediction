@@ -1,3 +1,3 @@
 # Optional: the data-quality check in section 1 of the notebook.
 # Pinned to a tested version of dstoolkit so later changes to it can't affect this project.
-dstoolkit @ git+https://github.com/Dito-84/Data_Science_Toolkit@44d8566f82e4f44e87368d278bdb88a9e4bec603
+dstoolkit @ git+https://github.com/Dito-84/dstoolkit@44d8566f82e4f44e87368d278bdb88a9e4bec603
