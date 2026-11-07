@@ -16,6 +16,8 @@ Predicting which Titanic passengers survived from six features (sex, passenger c
 
 Every model beats the no-skill baseline by a wide margin. Gradient boosting comes out ahead, but the top three are within about 2 points of each other.
 
+**Checked for leakage.** Families often shared a ticket (216 tickets, 596 passengers), so a random split puts 40% of test passengers alongside a ticket-mate in training. Keeping each ticket in one fold changes accuracy by under a point (gradient boosting 80.4% vs 81.0%, logistic regression 79.5% vs 79.8%), because what families shared most, who got into the boats, is already in each passenger's own sex, age and title. `boat` and `body` are left out entirely: they record the outcome.
+
 ## What drives the predictions
 
 <img src="feature_importance.png" width="560" alt="Feature importance">
