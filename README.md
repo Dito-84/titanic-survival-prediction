@@ -45,7 +45,7 @@ pip install -r requirements-optional.txt   # optional: the data-quality check
 jupyter notebook titanic_survival.ipynb
 ```
 
-`dstoolkit` is only used for the data-quality check. Without it, that one cell is skipped and everything else runs the same.
+`dstoolkit` (on PyPI as `pandas-dstoolkit`) is only used for the data-quality check. Without it, that one cell is skipped and everything else runs the same.
 
 ## Data
 
